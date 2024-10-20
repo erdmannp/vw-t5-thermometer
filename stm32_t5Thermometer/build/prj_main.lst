@@ -1,0 +1,61 @@
+ARM GAS  /tmp/ccAkMIMy.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.arch armv6s-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.file	"prj_main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "prj/prj_main.c"
+  18              		.section	.text.prj_main,"ax",%progbits
+  19              		.align	1
+  20              		.global	prj_main
+  21              		.syntax unified
+  22              		.code	16
+  23              		.thumb_func
+  25              	prj_main:
+  26              	.LFB40:
+   1:prj/prj_main.c **** #include "prj_main.h"
+   2:prj/prj_main.c **** #include "stm32f0xx_hal.h"
+   3:prj/prj_main.c **** 
+   4:prj/prj_main.c **** void prj_main() {
+  27              		.loc 1 4 17 view -0
+  28              		.cfi_startproc
+  29              		@ Volatile: function does not return.
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.L2:
+   5:prj/prj_main.c ****     while (1) {
+  34              		.loc 1 5 5 view .LVU1
+   6:prj/prj_main.c **** 
+   7:prj/prj_main.c ****         
+   8:prj/prj_main.c ****     }
+  35              		.loc 1 8 5 view .LVU2
+   5:prj/prj_main.c ****     while (1) {
+  36              		.loc 1 5 11 view .LVU3
+  37 0000 FEE7     		b	.L2
+  38              		.cfi_endproc
+  39              	.LFE40:
+  41              		.text
+  42              	.Letext0:
+ARM GAS  /tmp/ccAkMIMy.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 prj_main.c
+     /tmp/ccAkMIMy.s:19     .text.prj_main:00000000 $t
+     /tmp/ccAkMIMy.s:25     .text.prj_main:00000000 prj_main
+
+NO UNDEFINED SYMBOLS
