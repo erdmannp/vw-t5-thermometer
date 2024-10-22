@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccwMstnq.s 			page 1
+ARM GAS  /tmp/ccBlpyTK.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccwMstnq.s 			page 1
   30:Core/Src/usart.c **** 
   31:Core/Src/usart.c **** void MX_USART1_UART_Init(void)
   32:Core/Src/usart.c **** {
-ARM GAS  /tmp/ccwMstnq.s 			page 2
+ARM GAS  /tmp/ccBlpyTK.s 			page 2
 
 
   27              		.loc 1 32 1 view -0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccwMstnq.s 			page 1
   65 001c C361     		str	r3, [r0, #28]
   49:Core/Src/usart.c ****   huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
   66              		.loc 1 49 3 is_stmt 1 view .LVU17
-ARM GAS  /tmp/ccwMstnq.s 			page 3
+ARM GAS  /tmp/ccBlpyTK.s 			page 3
 
 
   67              		.loc 1 49 30 is_stmt 0 view .LVU18
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccwMstnq.s 			page 1
  109              		@ args = 0, pretend = 0, frame = 32
  110              		@ frame_needed = 0, uses_anonymous_args = 0
  111              		.loc 1 62 1 is_stmt 0 view .LVU28
-ARM GAS  /tmp/ccwMstnq.s 			page 4
+ARM GAS  /tmp/ccBlpyTK.s 			page 4
 
 
  112 0000 10B5     		push	{r4, lr}
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccwMstnq.s 			page 1
  140              		@ sp needed
  141              	.LVL5:
  142              		.loc 1 88 1 view .LVU36
-ARM GAS  /tmp/ccwMstnq.s 			page 5
+ARM GAS  /tmp/ccBlpyTK.s 			page 5
 
 
  143 001a 10BD     		pop	{r4, pc}
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccwMstnq.s 			page 1
  183 0042 8023     		movs	r3, #128
  184 0044 9B00     		lsls	r3, r3, #2
  185 0046 0393     		str	r3, [sp, #12]
-ARM GAS  /tmp/ccwMstnq.s 			page 6
+ARM GAS  /tmp/ccBlpyTK.s 			page 6
 
 
   78:Core/Src/usart.c ****     GPIO_InitStruct.Pull = GPIO_PULLUP;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccwMstnq.s 			page 1
  230              		@ args = 0, pretend = 0, frame = 0
  231              		@ frame_needed = 0, uses_anonymous_args = 0
  232              		.loc 1 91 1 is_stmt 0 view .LVU62
-ARM GAS  /tmp/ccwMstnq.s 			page 7
+ARM GAS  /tmp/ccBlpyTK.s 			page 7
 
 
  233 0000 10B5     		push	{r4, lr}
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccwMstnq.s 			page 1
  265 001e FFF7FEFF 		bl	HAL_GPIO_DeInit
  266              	.LVL12:
  267              		.loc 1 110 1 view .LVU70
-ARM GAS  /tmp/ccwMstnq.s 			page 8
+ARM GAS  /tmp/ccBlpyTK.s 			page 8
 
 
  268 0022 F2E7     		b	.L11
@@ -450,22 +450,22 @@ ARM GAS  /tmp/ccwMstnq.s 			page 1
  293              		.file 8 "Core/Inc/usart.h"
  294              		.file 9 "Core/Inc/main.h"
  295              		.file 10 "<built-in>"
-ARM GAS  /tmp/ccwMstnq.s 			page 9
+ARM GAS  /tmp/ccBlpyTK.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usart.c
-     /tmp/ccwMstnq.s:19     .text.MX_USART1_UART_Init:00000000 $t
-     /tmp/ccwMstnq.s:25     .text.MX_USART1_UART_Init:00000000 MX_USART1_UART_Init
-     /tmp/ccwMstnq.s:92     .text.MX_USART1_UART_Init:00000034 $d
-     /tmp/ccwMstnq.s:283    .bss.huart1:00000000 huart1
-     /tmp/ccwMstnq.s:98     .text.HAL_UART_MspInit:00000000 $t
-     /tmp/ccwMstnq.s:104    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-     /tmp/ccwMstnq.s:213    .text.HAL_UART_MspInit:00000064 $d
-     /tmp/ccwMstnq.s:219    .text.HAL_UART_MspDeInit:00000000 $t
-     /tmp/ccwMstnq.s:225    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-     /tmp/ccwMstnq.s:272    .text.HAL_UART_MspDeInit:00000024 $d
-     /tmp/ccwMstnq.s:280    .bss.huart1:00000000 $d
+     /tmp/ccBlpyTK.s:19     .text.MX_USART1_UART_Init:00000000 $t
+     /tmp/ccBlpyTK.s:25     .text.MX_USART1_UART_Init:00000000 MX_USART1_UART_Init
+     /tmp/ccBlpyTK.s:92     .text.MX_USART1_UART_Init:00000034 $d
+     /tmp/ccBlpyTK.s:283    .bss.huart1:00000000 huart1
+     /tmp/ccBlpyTK.s:98     .text.HAL_UART_MspInit:00000000 $t
+     /tmp/ccBlpyTK.s:104    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
+     /tmp/ccBlpyTK.s:213    .text.HAL_UART_MspInit:00000064 $d
+     /tmp/ccBlpyTK.s:219    .text.HAL_UART_MspDeInit:00000000 $t
+     /tmp/ccBlpyTK.s:225    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
+     /tmp/ccBlpyTK.s:272    .text.HAL_UART_MspDeInit:00000024 $d
+     /tmp/ccBlpyTK.s:280    .bss.huart1:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_HalfDuplex_Init

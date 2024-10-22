@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccumuQZ2.s 			page 1
+ARM GAS  /tmp/ccS62X0L.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccumuQZ2.s 			page 1
   30:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
   31:Core/Src/gpio.c **** /* USER CODE BEGIN 1 */
   32:Core/Src/gpio.c **** 
-ARM GAS  /tmp/ccumuQZ2.s 			page 2
+ARM GAS  /tmp/ccS62X0L.s 			page 2
 
 
   33:Core/Src/gpio.c **** /* USER CODE END 1 */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccumuQZ2.s 			page 1
   63 0020 009A     		ldr	r2, [sp]
   64              	.LBE2:
   65              		.loc 1 50 3 view .LVU8
-ARM GAS  /tmp/ccumuQZ2.s 			page 3
+ARM GAS  /tmp/ccS62X0L.s 			page 3
 
 
   51:Core/Src/gpio.c ****   __HAL_RCC_GPIOF_CLK_ENABLE();
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccumuQZ2.s 			page 1
  112 0052 FFF7FEFF 		bl	HAL_GPIO_Init
  113              	.LVL1:
   59:Core/Src/gpio.c **** 
-ARM GAS  /tmp/ccumuQZ2.s 			page 4
+ARM GAS  /tmp/ccS62X0L.s 			page 4
 
 
   60:Core/Src/gpio.c ****   /*Configure GPIO pins : PA2 PA3 PA4 PA5
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccumuQZ2.s 			page 1
  153 0080 00140048 		.word	1207964672
  154 0084 FC040000 		.word	1276
  155 0088 00040048 		.word	1207960576
-ARM GAS  /tmp/ccumuQZ2.s 			page 5
+ARM GAS  /tmp/ccS62X0L.s 			page 5
 
 
  156              		.cfi_endproc
@@ -249,14 +249,14 @@ ARM GAS  /tmp/ccumuQZ2.s 			page 1
  162              		.file 3 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f042x6.h"
  163              		.file 4 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h"
  164              		.file 5 "<built-in>"
-ARM GAS  /tmp/ccumuQZ2.s 			page 6
+ARM GAS  /tmp/ccS62X0L.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 gpio.c
-     /tmp/ccumuQZ2.s:19     .text.MX_GPIO_Init:00000000 $t
-     /tmp/ccumuQZ2.s:25     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-     /tmp/ccumuQZ2.s:152    .text.MX_GPIO_Init:0000007c $d
+     /tmp/ccS62X0L.s:19     .text.MX_GPIO_Init:00000000 $t
+     /tmp/ccS62X0L.s:25     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+     /tmp/ccS62X0L.s:152    .text.MX_GPIO_Init:0000007c $d
 
 UNDEFINED SYMBOLS
 memset

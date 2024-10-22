@@ -132,7 +132,9 @@ C_INCLUDES =  \
 -IDrivers/STM32F0xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32F0xx/Include \
 -IDrivers/CMSIS/Include \
--Iprj/
+-Iprj/ \
+-Issd1306-stm32HAL/lib/ \
+-I.
 
 
 # compile gcc flags
