@@ -7,7 +7,7 @@
 	(title_block
 		(title "T5 Thermometer")
 		(date "2024-10-19")
-		(rev "1")
+		(rev "2")
 		(company "Perdmann")
 	)
 	(lib_symbols
@@ -1709,6 +1709,12 @@
 		(uuid "ab478192-7e07-48fd-86cc-63196e9337cc")
 	)
 	(junction
+		(at 133.35 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b34abd13-4a48-40ed-ab11-8f9cc6394452")
+	)
+	(junction
 		(at 217.17 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1733,10 +1739,6 @@
 	(no_connect
 		(at 198.12 93.98)
 		(uuid "65624bb2-5231-40cf-8ad9-52774b611506")
-	)
-	(no_connect
-		(at 167.64 99.06)
-		(uuid "9f74e99a-3646-4aa2-9ae0-6d37362d9de2")
 	)
 	(no_connect
 		(at 198.12 96.52)
@@ -1774,13 +1776,13 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 106.68) (xy 167.64 106.68)
+			(xy 160.02 106.68) (xy 167.64 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "15d7fff3-a31b-40e1-b09c-dcf1bc976c78")
+		(uuid "122f3126-8e16-42d2-b839-6d97fe522d62")
 	)
 	(wire
 		(pts
@@ -1831,6 +1833,16 @@
 			(type default)
 		)
 		(uuid "4041d55d-23d7-4cff-b243-8259cf871cbe")
+	)
+	(wire
+		(pts
+			(xy 143.51 88.9) (xy 143.51 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43003182-af5b-448b-a56b-25fbb720c520")
 	)
 	(wire
 		(pts
@@ -1914,16 +1926,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 96.52) (xy 151.13 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8600094d-aec2-4167-8f5d-dfab05d18c7a")
-	)
-	(wire
-		(pts
 			(xy 151.13 96.52) (xy 167.64 96.52)
 		)
 		(stroke
@@ -1961,6 +1963,16 @@
 			(type default)
 		)
 		(uuid "9826665f-c99e-4d17-b48e-a650bd115157")
+	)
+	(wire
+		(pts
+			(xy 133.35 99.06) (xy 133.35 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b9b5236-7067-41fb-8f18-be5326bb0dbf")
 	)
 	(wire
 		(pts
@@ -2014,6 +2026,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 99.06) (xy 167.64 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6e64ea1-7004-4daf-bbdb-14ebb37f8ee5")
+	)
+	(wire
+		(pts
 			(xy 251.46 58.42) (xy 251.46 59.69)
 		)
 		(stroke
@@ -2051,6 +2073,16 @@
 			(type default)
 		)
 		(uuid "daa5ca56-4ac2-4674-94db-476d94a5d459")
+	)
+	(wire
+		(pts
+			(xy 133.35 88.9) (xy 143.51 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e74a8ab0-c641-48f4-bafb-4ccb6564d472")
 	)
 	(wire
 		(pts
@@ -2161,7 +2193,7 @@
 		(uuid "91574ea3-605d-4780-8101-2c11fd603c27")
 	)
 	(label "I2C_SDA_DISPLAY"
-		(at 151.13 95.25 0)
+		(at 151.13 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2170,6 +2202,17 @@
 			(justify left bottom)
 		)
 		(uuid "a098fc77-2d1c-49dc-ab3b-c4db51c787a9")
+	)
+	(label "I2C_SCL_DISPLAY"
+		(at 151.13 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b254103c-2c68-4017-a38e-ca31d71b60e2")
 	)
 	(label "SYS_SWCLK"
 		(at 102.87 87.63 0)
@@ -2192,17 +2235,6 @@
 			(justify left bottom)
 		)
 		(uuid "c135d0c1-f463-4f21-bdb8-f5e49a0c5522")
-	)
-	(label "I2C_SCL_DISPLAY"
-		(at 151.13 106.68 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ee86967b-40a6-4df8-9c5a-3b5162ce58a7")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3023,6 +3055,140 @@
 			(project "t5_thermometer"
 				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 133.35 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "542ef26d-03ed-40fc-b508-f15bb1125eac")
+		(property "Reference" "#PWR020"
+			(at 133.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 133.35 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd84b227-c943-446c-a123-1df31186e106")
+		)
+		(instances
+			(project "t5_thermometer"
+				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 137.16 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54fbc8df-140e-43cb-a81a-b9c7a25651a3")
+		(property "Reference" "R5"
+			(at 137.16 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R4k7"
+			(at 137.16 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 137.16 100.838 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 137.16 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a792c35-b3d2-4df7-9fcd-c35d83b6b10c")
+		)
+		(pin "2"
+			(uuid "768ce35b-e8a6-4718-bb6f-22e128ebf404")
+		)
+		(instances
+			(project "t5_thermometer"
+				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4048,6 +4214,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 160.02 106.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de746763-1151-405b-9e34-7a532c565fbf")
+		(property "Reference" "#PWR07"
+			(at 153.67 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 106.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81943a82-1c49-45fe-9a6b-e013715fd421")
+		)
+		(instances
+			(project "t5_thermometer"
+				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 226.06 91.44 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4388,6 +4621,74 @@
 			(project "t5_thermometer"
 				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 147.32 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8ea0fda-4aed-42d9-bec4-59471346445b")
+		(property "Reference" "R4"
+			(at 147.32 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R4k7"
+			(at 147.32 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 147.32 98.298 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f1e1a7a-ec0d-471e-9294-432f08dfa2ea")
+		)
+		(pin "2"
+			(uuid "3729e880-a69d-43c0-ac74-891d4ab54064")
+		)
+		(instances
+			(project "t5_thermometer"
+				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
+					(reference "R4")
 					(unit 1)
 				)
 			)
