@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "adc.h": "c",
+        "i2c.h": "c",
+        "ssd1306.h": "c",
+        "usart.h": "c",
+        "prj_main.h": "c",
+        "adc_read.h": "c",
+        "stdint.h": "c",
+        "font_freemono_11x16.h": "c",
+        "stm32f4xx_hal.h": "c",
+        "ssd1306_config.h": "c",
+        "stm32f0xx_hal.h": "c"
+    }
+}

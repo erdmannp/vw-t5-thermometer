@@ -3144,7 +3144,7 @@
 				)
 			)
 		)
-		(property "Value" "R4k7"
+		(property "Value" "R1k8"
 			(at 137.16 95.25 90)
 			(effects
 				(font
@@ -4644,7 +4644,7 @@
 				)
 			)
 		)
-		(property "Value" "R4k7"
+		(property "Value" "R1k8"
 			(at 147.32 92.71 90)
 			(effects
 				(font

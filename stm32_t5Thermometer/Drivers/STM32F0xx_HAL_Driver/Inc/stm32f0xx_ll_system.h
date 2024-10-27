@@ -18,12 +18,13 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2016 STMicroelectronics.
-  * All rights reserved.
+  * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
+  * All rights reserved.</center></h2>
   *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
   *
   ******************************************************************************
   */
@@ -83,9 +84,9 @@ extern "C" {
 /** @defgroup SYSTEM_LL_EC_IR_MOD SYSCFG IR Modulation
   * @{
   */
-#define LL_SYSCFG_IR_MOD_TIM16       (SYSCFG_CFGR1_IR_MOD_0 & SYSCFG_CFGR1_IR_MOD_1)    /*!< Timer16 is selected as IR Modulation envelope source */
-#define LL_SYSCFG_IR_MOD_USART1      (SYSCFG_CFGR1_IR_MOD_0)                            /*!< USART1 is selected as IR Modulation envelope source */
-#define LL_SYSCFG_IR_MOD_USART4      (SYSCFG_CFGR1_IR_MOD_1)                            /*!< USART4 is selected as IR Modulation envelope source */
+#define LL_SYSCFG_IR_MOD_TIM16       (SYSCFG_CFGR1_IR_MOD_0 & SYSCFG_CFGR1_IR_MOD_1)    /*!< Timer16 is selected as IR Modulation enveloppe source */
+#define LL_SYSCFG_IR_MOD_USART1      (SYSCFG_CFGR1_IR_MOD_0)                            /*!< USART1 is selected as IR Modulation enveloppe source */
+#define LL_SYSCFG_IR_MOD_USART4      (SYSCFG_CFGR1_IR_MOD_1)                            /*!< USART4 is selected as IR Modulation enveloppe source */
 /**
   * @}
   */
@@ -1848,4 +1849,4 @@ __STATIC_INLINE uint32_t LL_FLASH_IsPrefetchEnabled(void)
 
 #endif /* __STM32F0xx_LL_SYSTEM_H */
 
-
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
