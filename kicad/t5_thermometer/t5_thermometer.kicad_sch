@@ -1709,12 +1709,6 @@
 		(uuid "ab478192-7e07-48fd-86cc-63196e9337cc")
 	)
 	(junction
-		(at 133.35 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b34abd13-4a48-40ed-ab11-8f9cc6394452")
-	)
-	(junction
 		(at 217.17 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1737,6 +1731,10 @@
 		(uuid "2f831d27-ae0b-4bc3-a7f0-819483ebf8f2")
 	)
 	(no_connect
+		(at 167.64 99.06)
+		(uuid "5edd653e-e2ef-4f1f-8ce4-d806bf5224a8")
+	)
+	(no_connect
 		(at 198.12 93.98)
 		(uuid "65624bb2-5231-40cf-8ad9-52774b611506")
 	)
@@ -1751,10 +1749,6 @@
 	(no_connect
 		(at 198.12 86.36)
 		(uuid "cdeb4033-562a-4e63-83bb-919e7b215a0a")
-	)
-	(no_connect
-		(at 198.12 83.82)
-		(uuid "d110faa1-7940-4c26-8c2c-6db83a5c1e4d")
 	)
 	(no_connect
 		(at 198.12 91.44)
@@ -1836,16 +1830,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 88.9) (xy 143.51 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43003182-af5b-448b-a56b-25fbb720c520")
-	)
-	(wire
-		(pts
 			(xy 177.8 73.66) (xy 180.34 73.66)
 		)
 		(stroke
@@ -1883,6 +1867,16 @@
 			(type default)
 		)
 		(uuid "55b7290d-4686-43fa-8ce5-c984a6e7d370")
+	)
+	(wire
+		(pts
+			(xy 172.72 83.82) (xy 198.12 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "564efd37-9d11-4bb5-8d6c-9f92671840e9")
 	)
 	(wire
 		(pts
@@ -1966,16 +1960,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 99.06) (xy 133.35 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b9b5236-7067-41fb-8f18-be5326bb0dbf")
-	)
-	(wire
-		(pts
 			(xy 228.6 67.31) (xy 228.6 76.2)
 		)
 		(stroke
@@ -2026,16 +2010,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 99.06) (xy 167.64 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6e64ea1-7004-4daf-bbdb-14ebb37f8ee5")
-	)
-	(wire
-		(pts
 			(xy 251.46 58.42) (xy 251.46 59.69)
 		)
 		(stroke
@@ -2073,16 +2047,6 @@
 			(type default)
 		)
 		(uuid "daa5ca56-4ac2-4674-94db-476d94a5d459")
-	)
-	(wire
-		(pts
-			(xy 133.35 88.9) (xy 143.51 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e74a8ab0-c641-48f4-bafb-4ccb6564d472")
 	)
 	(wire
 		(pts
@@ -2126,8 +2090,8 @@
 		)
 		(uuid "1c3f17bf-cc12-4837-a1ea-d99c5b289b56")
 	)
-	(label "USART1_TX_DBG"
-		(at 198.12 99.06 0)
+	(label "USART2_TX_DBG"
+		(at 172.72 83.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2135,7 +2099,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2f75666d-d31b-4baf-a4b1-f9938010fe86")
+		(uuid "1fed2fa9-2df5-4444-93aa-525fc626b4c8")
 	)
 	(label "SYS_SWCLK"
 		(at 198.12 106.68 0)
@@ -2181,7 +2145,18 @@
 		)
 		(uuid "62b0c947-3006-4ca2-bb6f-9635e090e8b6")
 	)
-	(label "USART1_TX_DBG"
+	(label "I2C_SCL_DISPLAY"
+		(at 198.12 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "89926a93-e8bb-43a0-b408-52a53e1b5040")
+	)
+	(label "USART2_TX_DBG"
 		(at 102.87 97.79 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2202,17 +2177,6 @@
 			(justify left bottom)
 		)
 		(uuid "a098fc77-2d1c-49dc-ab3b-c4db51c787a9")
-	)
-	(label "I2C_SCL_DISPLAY"
-		(at 151.13 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b254103c-2c68-4017-a38e-ca31d71b60e2")
 	)
 	(label "SYS_SWCLK"
 		(at 102.87 87.63 0)
@@ -2741,7 +2705,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2ea66ebd-7a32-4f5d-99f0-def318561127")
 		(property "Reference" "U1"
 			(at 179.8194 111.76 0)
@@ -3055,140 +3018,6 @@
 			(project "t5_thermometer"
 				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 133.35 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "542ef26d-03ed-40fc-b508-f15bb1125eac")
-		(property "Reference" "#PWR020"
-			(at 133.35 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 133.35 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 133.35 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dd84b227-c943-446c-a123-1df31186e106")
-		)
-		(instances
-			(project "t5_thermometer"
-				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 137.16 99.06 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "54fbc8df-140e-43cb-a81a-b9c7a25651a3")
-		(property "Reference" "R5"
-			(at 137.16 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R1k8"
-			(at 137.16 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 137.16 100.838 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 137.16 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3a792c35-b3d2-4df7-9fcd-c35d83b6b10c")
-		)
-		(pin "2"
-			(uuid "768ce35b-e8a6-4718-bb6f-22e128ebf404")
-		)
-		(instances
-			(project "t5_thermometer"
-				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4621,74 +4450,6 @@
 			(project "t5_thermometer"
 				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 147.32 96.52 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f8ea0fda-4aed-42d9-bec4-59471346445b")
-		(property "Reference" "R4"
-			(at 147.32 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R1k8"
-			(at 147.32 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 147.32 98.298 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 147.32 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9f1e1a7a-ec0d-471e-9294-432f08dfa2ea")
-		)
-		(pin "2"
-			(uuid "3729e880-a69d-43c0-ac74-891d4ab54064")
-		)
-		(instances
-			(project "t5_thermometer"
-				(path "/50047928-ac31-4fdc-a3a3-efe1c714e937"
-					(reference "R4")
 					(unit 1)
 				)
 			)
