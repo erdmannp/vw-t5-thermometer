@@ -9,31 +9,24 @@
 #include "font_freemono_11x16.h"
 #include "font_opensymbol_14x20.h"
 
+#include "adc_read.h"
+
 const char SNOWFLAKE[] = " ";
 const char ESZETT[] = "{";
 const char GRAD[] = "}";
 #define BUFSIZE 11
 
-typedef struct {
-    int16_t in_temp;
-    int16_t out_temp;
-} adc_read_t;
-
-
-
 
 void prj_main() {
-    adc_read_t temps = {-10, -24};
+    adc_read_t temps = {0, 0};
     char buf1[BUFSIZE+1];
     char buf2[BUFSIZE+1];    
 
-    //init_adc();
+    init_adc();
     ssd1306_Init(&hi2c1);
 
     while (1) {
-        //read_adc_values(&temps);
-
-//Font_11x18
+        read_adc_values(&temps);
 
         snprintf(buf1, BUFSIZE+1, "Innen Au%sen", ESZETT);
 

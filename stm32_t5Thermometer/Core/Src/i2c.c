@@ -86,19 +86,19 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
     PF0-OSC_IN     ------> I2C1_SDA
     PA9     ------> I2C1_SCL
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_0;
+    GPIO_InitStruct.Pin = I2C_SDA_DISPLAY_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF1_I2C1;
-    HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
+    HAL_GPIO_Init(I2C_SDA_DISPLAY_GPIO_Port, &GPIO_InitStruct);
 
-    GPIO_InitStruct.Pin = GPIO_PIN_9;
+    GPIO_InitStruct.Pin = I2C_SCL_DISPLAY_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+    HAL_GPIO_Init(I2C_SCL_DISPLAY_GPIO_Port, &GPIO_InitStruct);
 
     /* I2C1 clock enable */
     __HAL_RCC_I2C1_CLK_ENABLE();
@@ -123,9 +123,9 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* i2cHandle)
     PF0-OSC_IN     ------> I2C1_SDA
     PA9     ------> I2C1_SCL
     */
-    HAL_GPIO_DeInit(GPIOF, GPIO_PIN_0);
+    HAL_GPIO_DeInit(I2C_SDA_DISPLAY_GPIO_Port, I2C_SDA_DISPLAY_Pin);
 
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_9);
+    HAL_GPIO_DeInit(I2C_SCL_DISPLAY_GPIO_Port, I2C_SCL_DISPLAY_Pin);
 
   /* USER CODE BEGIN I2C1_MspDeInit 1 */
 

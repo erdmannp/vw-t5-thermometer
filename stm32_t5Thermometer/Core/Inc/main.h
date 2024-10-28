@@ -57,6 +57,16 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define I2C_SDA_DISPLAY_Pin GPIO_PIN_0
+#define I2C_SDA_DISPLAY_GPIO_Port GPIOF
+#define ADC_INDOOR_Pin GPIO_PIN_0
+#define ADC_INDOOR_GPIO_Port GPIOA
+#define ADC_OUTDOOR_Pin GPIO_PIN_1
+#define ADC_OUTDOOR_GPIO_Port GPIOA
+#define USART2_TX_DBG_Pin GPIO_PIN_2
+#define USART2_TX_DBG_GPIO_Port GPIOA
+#define I2C_SCL_DISPLAY_Pin GPIO_PIN_9
+#define I2C_SCL_DISPLAY_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 

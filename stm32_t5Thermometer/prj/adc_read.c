@@ -29,6 +29,7 @@ HAL_StatusTypeDef start_adc() {
 void stop_adc() {
     HAL_ADC_Stop_DMA(&hadc);
 }
+
 void init_adc() {
     HAL_ADCEx_Calibration_Start(&hadc);
 }
